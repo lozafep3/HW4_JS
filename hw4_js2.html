@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW4_JS</title>
+</head>
+<body>
+<script defer>
+
+    var a = +prompt('Введите число A');
+    var b = +prompt('Введите число B');
+    var c = +prompt('Введите число C');
+    var d;
+    var res1;
+    var res2;
+
+    d = (b * b) - (4 * a * c);
+
+    if (d < 0) {
+        alert('Уравнение Ax2+ Bx + C = 0 не имеет решения');
+    } else {
+        res1 = ( -b + Math.sqrt(d) ) / 2 * a;
+        res2 = ( -b - Math.sqrt(d) ) / 2 * a;
+        alert('Уравнение Ax2+ Bx + C = 0 имеет два решения: x1 = ' + res1 + ', x2 = ' + res2);
+    }
+
+</script>
+</body>
+</html>

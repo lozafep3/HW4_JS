@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW4_JS</title>
+</head>
+<body>
+<script defer>
+
+    var a = prompt('Введите первое число');
+    var b = prompt('Введите второе число');
+    var operator = prompt('Введите оператор');
+
+    switch (operator) {
+        case '+':
+            alert( 'Результат: ' + (+a + +b) );
+            break
+        case '-':
+            alert( 'Результат: ' + (+a - +b) );
+            break
+        case '*':
+            alert( 'Результат: ' + (+a * +b) );
+            break
+        case '/':
+            alert( 'Результат: ' + (+a / +b) );
+            break
+        default:
+            alert( 'Неизвестная операция' );
+    }
+
+</script>
+</body>
+</html>
