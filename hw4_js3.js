@@ -1,6 +1,6 @@
 var conf = confirm('Желаете начать игру?');
 
-if (conf == false) {
+if (conf === false) {
         alert('Сегодня вы не выиграли миллион, а могли');
     } else {
 
@@ -29,7 +29,7 @@ if (conf == false) {
 
             var roll = +prompt('Назовите целое число от 0 до ' + maxNumber);
 
-            if (roll == num) {
+            if (roll === num) {
                 winSum = winSum + win;
                 mult = mult * 3;
                 attempt = 1;
@@ -43,7 +43,7 @@ if (conf == false) {
             }
         }
 
-        while (attempt < 4 && cont == true) {
+        while (attempt < 4 && cont === true) {
             tryYourLuck();
         }
 
